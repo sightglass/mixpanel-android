@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="mixpanel-android:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/IT_MixpanelAPI_3.3.0</output-path>
+    <root id="archive" name="mixpanel-android.jar">
+      <element id="module-output" name="mixpanel-android" />
+    </root>
+  </artifact>
+</component>

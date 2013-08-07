@@ -2,3 +2,9 @@ local.properties
 bin
 gen
 docs
+
+#Intelli J
+/out/
+/.idea/uiDesigner.xml
+/.idea/workspace.xml
+/.idea/dictionaries
