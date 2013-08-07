@@ -296,8 +296,8 @@ import android.util.Log;
             private void sendAllData() {
                 logAboutMessageToMixpanel("Sending records to Mixpanel");
 
-                sendData(MPDbAdapter.Table.EVENTS, "/track?ip=1");
-                sendData(MPDbAdapter.Table.PEOPLE, "/engage");
+                sendData(MPDbAdapter.Table.EVENTS, "/api/track");
+                sendData(MPDbAdapter.Table.PEOPLE, "/api/engage");
             }
 
             private void sendData(MPDbAdapter.Table table, String endpointUrl) {
