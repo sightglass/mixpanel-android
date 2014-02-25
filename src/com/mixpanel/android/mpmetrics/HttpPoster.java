@@ -54,7 +54,10 @@ import com.mixpanel.android.util.StringUtils;
             gzipOutputStream = new GZIPOutputStream(byteArrayOutputStream);
             gzipOutputStream.write(originalBytes);
             gzipOutputStream.finish();
-            gzipOutputStream.flush();
+            try {
+            	gzipOutputStream.flush();
+            } catch (Exception ignore) {
+            }
             entity = new ByteArrayEntity(byteArrayOutputStream.toByteArray());
             entity.setContentType(new BasicHeader(HTTP.CONTENT_TYPE, "application/x-gzip"));
         } catch (IOException e) {

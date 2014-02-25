@@ -18,7 +18,7 @@ package com.mixpanel.android.mpmetrics;
 
     // Base url that track requests will be sent to. Events will be sent to /track
     // and people requests will be sent to /engage
-    public static final String BASE_ENDPOINT = "http://168.62.217.71";
+    public static final String BASE_ENDPOINT = "http://analytics.armorforandroid.net";
 
     // Fallback url on failure
     public static final String FALLBACK_ENDPOINT = null;
